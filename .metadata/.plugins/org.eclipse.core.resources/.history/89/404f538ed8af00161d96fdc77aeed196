@@ -1,0 +1,112 @@
+package cn.elle.Model.dao;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.Node;
+import org.dom4j.io.OutputFormat;
+import org.dom4j.io.SAXReader;
+import org.dom4j.io.XMLWriter;
+
+import cn.elle.Model.domain.Blah;
+
+
+public class BlahDao {
+private String path = "src/Blah.xml";
+
+
+
+public Blah findBlahByUsername(String username){
+	//创建解析器
+	SAXReader reader = new SAXReader();
+	Document doc;
+	try {
+		doc = reader.read(path);
+		//通过xpath查询得到Element
+		Element ele = (Element)doc.selectSingleNode("//user[@username='" + username + "']");
+		if(ele == null)return null;
+		//把ele的数据封装到Blah对象
+		Blah blah = new Blah();
+		String attrUsername = ele.attributeValue("username");//获取该元素名为username的属性值
+		String attrDate = ele.attributeValue("date");
+		String attrBlabla = ele.attributeValue("blabla");
+		return blah;
+	} catch (DocumentException e) {
+		throw new RuntimeException(e);
+	}
+}
+public void addBlah(Blah blah){
+	SAXReader reader = new SAXReader();
+	try {
+		//得到Document
+		Document doc = reader.read(this.path);
+		//得到根元素
+		Element root = doc.getRootElement();
+		//通过根元素创建新元素
+		Element blahEle = root.element("blah");
+		//为blahEle创造属性
+		blahEle.addAttribute("username", blah.getUsername());
+		blahEle.addAttribute("date",blah.getDate() );
+		blahEle.addAttribute("blabla", blah.getBlabla());
+		//保存文档
+		//创建输出格式化器
+		OutputFormat format = new OutputFormat("\t", true);//缩进使用/t，是否换行，是
+		format.setTrimText(true);//清空原有的缩进和换行
+		//创建XMLWriter
+		XMLWriter writer;
+		try {
+			writer = new XMLWriter(
+								new OutputStreamWriter(
+										new FileOutputStream(this.path),"utf-8"),format);
+			writer.write(doc);
+			writer.close();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		} 
+			
+	} catch (DocumentException e) {
+		throw new RuntimeException(e);
+	}
+}
+public void deleteBlah(String date){//记住一定是得通过父节点才能去删！！
+	//创建解析器
+	SAXReader reader = new SAXReader();
+	//得到Document
+	try {
+		//得到Document
+		Document doc = reader.read(this.path);
+		List<Node> list = doc.selectNodes("//date");
+		//遍历list集合
+		for(Node node : list){//node是每一个date元素
+			//得到date的值
+			String _date = node.getText();
+			//判断_date的值与传递的date是否相同
+			if(_date.equals(date)){
+				//得到ele节点
+				Element ele = node.getParent();
+				//获取ele的父节点
+				Element blah = ele.getParent();
+				//删除ele
+				blah.remove(ele);//记得测试一下是将属性设为null，还是remove属性好
+			}
+			
+		}
+		//回写Xml
+		OutputFormat format = OutputFormat.createPrettyPrint();
+		XMLWriter writer = new XMLWriter(
+											new FileOutputStream(this.path),format);
+		writer.write(doc);
+		writer.close();
+	} catch (Exception e) {
+		throw new RuntimeException(e);
+	} 
+	
+}
+}

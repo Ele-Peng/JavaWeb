@@ -1,0 +1,18 @@
+package cn.elle.Model.service;
+
+import cn.elle.Model.dao.BlahDao;
+import cn.elle.Model.domain.Blah;
+import cn.elle.Model.domain.User;
+
+public class BlahService {
+private BlahDao blahdao = new BlahDao(); 
+public void addBlabla(Blah blah){
+    this.blahdao.addBlah(blah);
+}
+public void deleteBlabla(String date){
+	this.blahdao.deleteBlah(date);
+}
+public void getBlahs(String username){
+	this.blahdao.findBlahByUsername(username);
+}
+}

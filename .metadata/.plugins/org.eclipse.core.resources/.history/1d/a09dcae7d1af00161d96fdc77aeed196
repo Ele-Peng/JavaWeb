@@ -1,0 +1,54 @@
+package cn.elle.Model.dao;
+
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+
+import cn.elle.Model.domain.Blah;
+
+public class BlahDao {
+private String path = "H://blah.xml";
+public Blah findByBlahusername(String username){
+	//创建解析器
+	SAXReader reader = new SAXReader();
+	Document doc;
+	try {
+		doc = reader.read(path);
+		//通过xpath查询得到Element
+		Element ele = (Element)doc.selectSingleNode("//user[@username='" + username + "']");
+		if(ele == null)return null;
+		//把ele的数据封装到Blah对象
+		Blah blah = new Blah();
+		String attrUsername = ele.attributeValue("username");//获取该元素名为username的属性值
+		String attrDate = ele.attributeValue("date");
+		String attrBlabla = ele.attributeValue("blabla");
+		return blah;
+	} catch (DocumentException e) {
+		throw new RuntimeException(e);
+	}
+}
+public void addBlah(Blah blah){
+	SAXReader reader = new SAXReader();
+	try {
+		//得到Document
+		Document doc = reader.read(this.path);
+		//得到根元素
+		Element root = doc.getRootElement();
+		//通过根元素创建新元素
+		Element blahEle = root.element("blah");
+		//为blahEle创造属性
+		blahEle.addAttribute("username", blah.getUsername());
+		blahEle.addAttribute("date",blah.getDate() );
+		blahEle.addAttribute("blabla", blah.getMessage());
+		
+		
+		
+	} catch (DocumentException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	
+}
+}

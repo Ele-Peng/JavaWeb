@@ -1,0 +1,16 @@
+package cn.elle.Model.service;
+
+import cn.elle.Model.dao.BlahDao;
+import cn.elle.Model.domain.Blah;
+import cn.elle.Model.domain.User;
+
+public class BlahService {
+private BlahDao blahdao = new BlahDao(); 
+public void addBlabla(Blah blah){
+	Blah _blah = this.blahdao.findBlahByUsername(blah.getUsername());
+    if (_blah == null) {
+      throw new UserException( blah.getUsername() + "该用户名已使用过");
+    }
+    this.blahdao.addBlah(blah);
+}
+}

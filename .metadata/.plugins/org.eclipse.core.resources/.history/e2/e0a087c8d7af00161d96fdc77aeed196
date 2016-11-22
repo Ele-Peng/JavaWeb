@@ -1,0 +1,18 @@
+package test.dao;
+
+import org.junit.Test;
+
+import cn.elle.Model.dao.UserDao;
+import cn.elle.Model.domain.Blah;
+import cn.elle.Model.domain.User;
+
+public class BlahDaoTest {
+	
+	@Test	
+	public void testfindBlahByusername(){
+		BlahDao blahdao = new UserDao();
+	    Blah blah = blahdao.findBlahByUsername("彭倩");
+	    System.out.println(blah);
+	}
+	
+}

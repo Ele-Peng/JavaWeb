@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.w3c.dom.Document"/>
+<fullyQualifiedTypeName name="org.dom4j.Document"/>
+<fullyQualifiedTypeName name="org.dom4j.Element"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.serialize.OutputFormat"/>
+<fullyQualifiedTypeName name="org.dom4j.io.XMLWriter"/>
+<fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+<fullyQualifiedTypeName name="org.dom4j.Node"/>
+<fullyQualifiedTypeName name="cn.elle.Model.service.BlahServiceAdd"/>
+<fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="cn.elle.Model.service.BlahService"/>
+<fullyQualifiedTypeName name="cn.elle.Model.domain.User"/>
+<fullyQualifiedTypeName name="cn.elle.Model.domain.Blah"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package cn.elle.Controller.servlet;
+
+public class MessageServlet {
+
+}

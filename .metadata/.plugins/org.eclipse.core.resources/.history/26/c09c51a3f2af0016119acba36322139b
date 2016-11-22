@@ -1,0 +1,26 @@
+package cn.elle.Controller.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import cn.elle.Model.service.UserService;
+
+public class BlahServlet extends HttpServlet {
+
+	
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		request.setCharacterEncoding("utf-8");
+	    response.setContentType("text/html;charset=utf-8");
+	    PrintWriter out = response.getWriter();
+	    UserService userservice = new UserService();
+	    BlahServiceAdd blahservice = new BlahServiceAdd();
+	}
+
+}

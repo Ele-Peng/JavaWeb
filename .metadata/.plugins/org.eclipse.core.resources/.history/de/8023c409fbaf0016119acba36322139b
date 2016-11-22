@@ -1,0 +1,33 @@
+package test.dao;
+
+import org.junit.Test;
+
+import cn.elle.Model.dao.BlahDao;
+import cn.elle.Model.dao.UserDao;
+import cn.elle.Model.domain.Blah;
+
+public class BlahDaoTest {
+	
+	@Test	
+	public void testfindBlahByusername(){
+		BlahDao blahDao = new BlahDao();
+	    Blah blah = blahDao.findBlahByUsername("彭倩");
+	    System.out.println(blah);
+	}
+	@Test
+	public void testaddBlah(){
+		BlahDao blahDao = new BlahDao();
+		Blah blah = new Blah();
+		blah.setUsername("王五");
+		blah.setDate("2016-11-23");
+		blah.setBlabla("当然当然呀~~");
+		blahDao.addBlah(blah);
+	}
+	@Test
+	public void testdeleteBlah(){
+		String date = "2016-11-23";
+		BlahDao blahDao = new BlahDao();
+		blahDao.deleteBlah(date);
+	}
+	
+}

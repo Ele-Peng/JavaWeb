@@ -1,0 +1,78 @@
+package cn.elle.Controller.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.beanutils.BeanUtils;
+
+import cn.elle.Model.domain.Blah;
+import cn.elle.Model.service.BlahService;
+
+public class BlahServlet extends HttpServlet {
+
+	
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+	    response.setContentType("text/html;charset=utf-8");
+	    PrintWriter out = response.getWriter();
+	    BlahService blahservice = new BlahService();
+	    /*String _blahUsername = (String) request.getSession().getAttribute("sessionUser");
+	    Blah blah = new Blah();
+	    blah.setUsername(_blahUsername);
+	    String date = request.getParameter("date");
+	    blah.setDate(date);
+	    String blabla = request.getParameter("blabla");
+	    blah.setBlabla();*/
+	    request.setAttribute("username", request.getSession().getAttribute("sessionUser"));
+	    try {
+			Blah form = (Blah)Blah.class.newInstance();
+			BeanUtils.populate(form, request.getParameterMap());
+			Map<String,String> errors = new HashMap();
+			String blabla = form.getBlabla();
+			if((blabla==null)||(blabla.trim().isEmpty())){
+				errors.put("blabla", "内容不能为空");
+			}else if(blabla.length()>=140){
+				errors.put("blabla", "超过140字了哟~~");
+			}
+			 if ((errors != null) && (errors.size() > 0))
+		      {
+//		        System.out.println("12");
+		        request.setAttribute("errors", errors);
+		        request.setAttribute("user", form);    
+		        request.getRequestDispatcher("/user/Message.jsp").forward(request, response);
+		        return;
+		      }
+			 blahservice.addBlabla(form);
+			 List<Blah> blahs = blahService.getBlahs(form.getUsername());
+			 request.setAttribute("blahs", blahs);
+//		      out.print("<h1>完成注册</h1><a href='" + request.getContextPath() + "/user/Login.jsp" + "'>点击这里去登录吧~</a>");
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		} 
+	}
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+	    response.setContentType("text/html;charset=utf-8");
+	    PrintWriter out = response.getWriter();
+	    BlahService blahservice = new BlahService();
+	    request.setAttribute("username", request.getSession().getAttribute("sessionUser"));
+	    Blah form;
+		try {
+			form = (Blah)Blah.class.newInstance();
+			BeanUtils.populate(form, request.getParameterMap());
+			String date = form.getDate();
+			blahservice.deleteBlabla(date);
+		} catch (Exception e) {
+			throw new RuntimeException(e);	
+		} 
+	}
+}
