@@ -1,4 +1,4 @@
-#Tue Nov 22 16:17:57 CST 2016
+#Tue Nov 22 20:19:03 CST 2016
 tomcat7Server.Gossip.altContextRoot=
 tomcat7Server.Gossip.isExploded=true
 tomcat7Server.Gossip.contextRoot=/Gossip
@@ -9,6 +9,6 @@ tomcat7Server.Gossip.isDeployed=true
 tomcat7Server.Gossip.noFileCopy=false
 tomcat7Server.Gossip.deployIsOverProject=false
 eclipse.preferences.version=1
-tomcat7Server.Gossip.deploymentPath=D\:\\apache-tomcat-7.0.8\\webapps\\Gossip
+tomcat7Server.Gossip.deploymentPath=F\:\\apache-tomcat-7.0.8\\webapps\\Gossip
 tomcat7Server.Gossip.IEARProjectName=
 tomcat7Server.Gossip.type=WebDeployment

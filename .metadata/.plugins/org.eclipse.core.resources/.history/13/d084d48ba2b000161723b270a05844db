@@ -1,0 +1,7 @@
+package cn.elle.Model.service;
+
+public class BlahSerice {
+public void addBlabla(){
+	
+}
+}

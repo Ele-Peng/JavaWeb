@@ -11935,3 +11935,194 @@ org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
 	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
 	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-11-22 18:45:22.546
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-11-22 19:10:39.695
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifest(ManifestUtilities.java:80)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifestClasspath(ManifestUtilities.java:147)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestClasspath(J2EEModuleVirtualComponent.java:242)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.calculateManifestReferences(J2EEModuleVirtualComponent.java:362)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:479)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:474)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getPotentialComponentClasspathDependencies(ClasspathDependencyUtil.java:200)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator.validateInJob(ClasspathDependencyValidator.java:95)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-11-22 19:11:04.965
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifest(ManifestUtilities.java:80)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifestClasspath(ManifestUtilities.java:147)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestClasspath(J2EEModuleVirtualComponent.java:242)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.calculateManifestReferences(J2EEModuleVirtualComponent.java:362)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:479)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:474)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getPotentialComponentClasspathDependencies(ClasspathDependencyUtil.java:200)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator.validateInJob(ClasspathDependencyValidator.java:95)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-11-22 19:11:22.092
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifest(ManifestUtilities.java:80)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifestClasspath(ManifestUtilities.java:147)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestClasspath(J2EEModuleVirtualComponent.java:242)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.calculateManifestReferences(J2EEModuleVirtualComponent.java:362)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:479)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:474)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getPotentialComponentClasspathDependencies(ClasspathDependencyUtil.java:200)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator.validateInJob(ClasspathDependencyValidator.java:95)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-11-22 19:11:27.885
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifest(ManifestUtilities.java:80)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifestClasspath(ManifestUtilities.java:147)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestClasspath(J2EEModuleVirtualComponent.java:242)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.calculateManifestReferences(J2EEModuleVirtualComponent.java:362)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:479)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:474)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getPotentialComponentClasspathDependencies(ClasspathDependencyUtil.java:200)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator.validateInJob(ClasspathDependencyValidator.java:95)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-11-22 19:11:32.880
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifest(ManifestUtilities.java:80)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifestClasspath(ManifestUtilities.java:147)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestClasspath(J2EEModuleVirtualComponent.java:242)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.calculateManifestReferences(J2EEModuleVirtualComponent.java:362)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:479)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:474)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getPotentialComponentClasspathDependencies(ClasspathDependencyUtil.java:200)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator.validateInJob(ClasspathDependencyValidator.java:95)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-11-22 19:11:37.086
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifest(ManifestUtilities.java:80)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifestClasspath(ManifestUtilities.java:147)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestClasspath(J2EEModuleVirtualComponent.java:242)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.calculateManifestReferences(J2EEModuleVirtualComponent.java:362)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:479)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:474)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getPotentialComponentClasspathDependencies(ClasspathDependencyUtil.java:200)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator.validateInJob(ClasspathDependencyValidator.java:95)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-11-22 19:11:46.704
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifest(ManifestUtilities.java:80)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifestClasspath(ManifestUtilities.java:147)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestClasspath(J2EEModuleVirtualComponent.java:242)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.calculateManifestReferences(J2EEModuleVirtualComponent.java:362)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:479)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:474)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getPotentialComponentClasspathDependencies(ClasspathDependencyUtil.java:200)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator.validateInJob(ClasspathDependencyValidator.java:95)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-11-22 19:11:59.297
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifest(ManifestUtilities.java:80)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.getManifestClasspath(ManifestUtilities.java:147)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestClasspath(J2EEModuleVirtualComponent.java:242)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.calculateManifestReferences(J2EEModuleVirtualComponent.java:362)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:479)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getManifestReferences(J2EEModuleVirtualComponent.java:474)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getPotentialComponentClasspathDependencies(ClasspathDependencyUtil.java:200)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator.validateInJob(ClasspathDependencyValidator.java:95)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.genuitec.eclipse.core 2 2 2016-11-22 19:46:56.969
+!MESSAGE Undeployment failure on Tomcat  7.x. Could not delete D:\apache-tomcat-7.0.8\webapps\Gossip. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at D:\apache-tomcat-7.0.8\webapps\Gossip
+
+!ENTRY com.genuitec.eclipse.core 2 2 2016-11-22 19:46:59.854
+!MESSAGE Undeployment failure on Tomcat  7.x. Could not delete D:\apache-tomcat-7.0.8\webapps\Gossip. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at D:\apache-tomcat-7.0.8\webapps\Gossip
+!SESSION 2016-11-22 19:57:08.836 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 0 2016-11-22 19:57:26.925
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-5,5,main]" timed out waiting (5003ms) for thread "Thread[Worker-8,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201109222040 [960]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/me/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201109222040.jar" by thread "Worker-8".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-11-22 19:57:27.615
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY com.genuitec.eclipse.core 2 2 2016-11-22 20:17:01.580
+!MESSAGE Undeployment failure on Tomcat  7.x. Could not delete F:\apache-tomcat-7.0.8\webapps\Gossip. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at F:\apache-tomcat-7.0.8\webapps\Gossip
+
+!ENTRY com.genuitec.eclipse.core 2 2 2016-11-22 20:17:05.395
+!MESSAGE Undeployment failure on Tomcat  7.x. Could not delete F:\apache-tomcat-7.0.8\webapps\Gossip. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at F:\apache-tomcat-7.0.8\webapps\Gossip
+
+!ENTRY com.genuitec.eclipse.core 2 2 2016-11-22 20:18:23.954
+!MESSAGE Undeployment failure on Tomcat  7.x. Could not delete F:\apache-tomcat-7.0.8\webapps\Gossip. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at F:\apache-tomcat-7.0.8\webapps\Gossip
+
+!ENTRY com.genuitec.eclipse.core 2 2 2016-11-22 20:18:27.844
+!MESSAGE Undeployment failure on Tomcat  7.x. Could not delete F:\apache-tomcat-7.0.8\webapps\Gossip. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at F:\apache-tomcat-7.0.8\webapps\Gossip

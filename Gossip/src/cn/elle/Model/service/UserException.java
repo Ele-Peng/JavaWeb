@@ -1,5 +1,6 @@
 package cn.elle.Model.service;
 
+
 public class UserException
   extends Exception
 {
@@ -20,3 +21,4 @@ public class UserException
     super(cause);
   }
 }
+

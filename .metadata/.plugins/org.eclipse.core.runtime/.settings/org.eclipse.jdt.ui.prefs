@@ -1,7 +1,7 @@
-#Mon Nov 21 17:19:57 CST 2016
+#Tue Nov 22 19:51:49 CST 2016
 content_assist_proposals_foreground=0,0,0
-spelling_ignore_urls=true
 spelling_locale_initialized=true
+spelling_ignore_urls=true
 spelling_ignore_non_letters=true
 org.eclipse.jdt.ui.text.templates_migrated=true
 spelling_ignore_ampersand_in_properties=true
@@ -17,9 +17,10 @@ org.eclipse.jdt.ui.javadoclocations.migrated=true
 proposalOrderMigrated=true
 spelling_user_dictionary_encoding=UTF-8
 spelling_ignore_mixed=true
+Refactoring.savealleditors=true
 spelling_ignore_java_strings=true
-content_assist_proposals_background=255,255,255
 org.eclipse.jdt.ui.formatterprofiles.version=12
+content_assist_proposals_background=255,255,255
 content_assist_number_of_computers=17
 spelling_ignore_digits=true
 spelling_ignore_upper=true

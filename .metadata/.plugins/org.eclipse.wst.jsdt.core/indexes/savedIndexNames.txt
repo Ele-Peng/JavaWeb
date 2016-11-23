@@ -1,5 +1,4 @@
 INDEX VERSION 1.122+F:\MyEsWorkSp\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-854770808.index
 3139567196.index
 2661280733.index
 3361155948.index

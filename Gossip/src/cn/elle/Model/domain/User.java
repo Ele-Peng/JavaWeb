@@ -1,5 +1,6 @@
 package cn.elle.Model.domain;
 
+
 public class User
 {
   private String username;
@@ -54,3 +55,4 @@ public class User
       "User [username=" + this.username + ", password=" + this.password + ", confirmedPassword=" + this.confirmedPassword + ", Email=" + this.email + "]";
   }
 }
+
